@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="memory-game">
+    <div class="memory-card" data-framework="abacaxi">
+      <img class="front-face" src="img/abacaxi.svg" alt="Abacaxi" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+    <div class="memory-card" data-framework="abacaxi">
+      <img class="front-face" src="img/abacaxi.svg" alt="Abacaxi" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+
+    <div class="memory-card" data-framework="berin">
+      <img class="front-face" src="img/berin.svg" alt="Berinjela" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+    <div class="memory-card" data-framework="berin">
+      <img class="front-face" src="img/berin.svg" alt="Berinjela" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+
+    <div class="memory-card" data-framework="Blueberry">
+      <img class="front-face" src="img/blueberry.svg" alt="Blueberry" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+    <div class="memory-card" data-framework="Blueberry">
+      <img class="front-face" src="img/blueberry.svg" alt="Blueberry" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+
+    <div class="memory-card" data-framework="laranja">
+      <img class="front-face" src="img/laranja.svg" alt="Laranja" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+    <div class="memory-card" data-framework="laranja">
+      <img class="front-face" src="img/laranja.svg" alt="Laranja" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+
+    <div class="memory-card" data-framework="melancia">
+      <img class="front-face" src="img/melancia.svg" alt="Melancia" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+    <div class="memory-card" data-framework="melancia">
+      <img class="front-face" src="img/melancia.svg" alt="Melancia" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+
+    <div class="memory-card" data-framework="morango">
+      <img class="front-face" src="img/morango.svg" alt="Morango" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+    <div class="memory-card" data-framework="morango">
+      <img class="front-face" src="img/morango.svg" alt="Morango" />
+      <img class="back-face" src="img/mack.png" alt="Mackenzie" />
+    </div>
+  </section>
+
+  <button id="openModalBtn">Mudar Cor</button>
+  <button id="openCardBackColorModalBtn">Mudar Cor do Verso</button>
+  <button id="openImageModalBtn">Mudar Imagens</button>
+
+  <div id="colorModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Selecione uma cor:</h2>
+      <input type="color" id="colorPicker">
+      <button id="applyColorBtn">Aplicar Cor</button>
+    </div>
+  </div>
+
+  <div id="cardBackColorModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Selecione uma cor para o verso das cartas:</h2>
+      <input type="color" id="cardBackColorPicker">
+      <button id="applyCardBackColorBtn">Aplicar Cor</button>
+    </div>
+  </div>
+
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Selecione novas imagens:</h2>
+      <div id="imageSelectors">
+        <!-- Controles de upload de imagens -->
+      </div>
+      <button id="applyImageBtn">Aplicar Imagens</button>
+    </div>
+  </div>
+
+  <div id="congratsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Parabéns!</h2>
+      <p>Você completou o jogo!</p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
